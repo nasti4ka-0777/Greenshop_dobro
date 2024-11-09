@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Cera Pro', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    padding: 30px 0;
+    background: white;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3D3D3D;
+    transition: color 0.3s ease;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    padding: 0 35px 30px;
+}
+
+nav li a:hover {
+    color: #46A358;
+}
+
+nav li:first-child a {
+    color: #46A358;
+}
+
+nav li:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #46A358;
+}
+
+nav > a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
+}
+
+nav button, .login-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+    background: #46A358;
+    border-radius: 6px;
+    padding: 12px 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav button:hover, .login-btn:hover {
+    background: #387c45;
+}
+
+.hero {
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+}
+
+.hero .container {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.left-side {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 557px;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.left-side p:first-child {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.2em;
+}
+
+.left-side h2 {
+    font-size: 70px;
+    line-height: 1.1;
+    color: #3D3D3D;
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+.left-side h2 span {
+    color: #46A358;
+}
+
+.left-side p:last-of-type {
+    color: #727272;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 55px;
+    max-width: 500px;
+}
+
+.left-side button {
+    background: #46A358;
+    border-radius: 6px;
+    padding: 16px 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.1em;
+}
+
+.left-side button:hover {
+    background: #387c45;
+}
+
+.right-side {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.right-side img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
