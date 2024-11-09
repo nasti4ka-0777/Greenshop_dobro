@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Cera Pro', Arial, sans-serif;
+    background: #FFFFFF;
 }
 
 .container {
@@ -18,19 +19,22 @@ body {
 }
 
 header {
-    padding: 30px 0;
+    padding: 25px 0;
     background: white;
-    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.2);
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
-    display: inline-block;
+    display: flex;
     list-style: none;
-    vertical-align: middle;
+    align-items: center;
+    margin: 0 auto;
 }
 
 nav a {
@@ -40,9 +44,13 @@ nav a {
 }
 
 nav li {
-    display: inline-block;
     position: relative;
-    padding: 0 35px 30px;
+    padding: 0 35px;
+}
+
+nav li a {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 nav li a:hover {
@@ -51,31 +59,27 @@ nav li a:hover {
 
 nav li:first-child a {
     color: #46A358;
+    font-weight: 700;
 }
 
 nav li:first-child::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
     height: 3px;
     background-color: #46A358;
 }
 
-nav > a {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 60px;
-}
-
-nav button, .login-btn {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 60px;
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     background: #46A358;
     border-radius: 6px;
-    padding: 12px 35px;
+    padding: 8px 17px;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -84,75 +88,92 @@ nav button, .login-btn {
     text-decoration: none;
 }
 
-nav button:hover, .login-btn:hover {
+.login-btn:hover {
     background: #387c45;
 }
 
+.login-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 .hero {
-    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    background: #FFFFFF;
 }
 
 .hero .container {
-    padding: 120px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 68px 0;
 }
 
 .left-side {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 557px;
-    text-align: left;
-    padding-right: 50px;
+    max-width: 630px;
 }
 
 .left-side p:first-child {
     color: #3D3D3D;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 15px;
-    letter-spacing: 0.2em;
+    margin-bottom: 7px;
+    letter-spacing: 0.1em;
 }
 
 .left-side h2 {
+    font-family: 'Cera Pro', Arial, sans-serif;
     font-size: 70px;
-    line-height: 1.1;
-    color: #3D3D3D;
-    margin-bottom: 50px;
     font-weight: 900;
+    line-height: 70px;
+    text-align: left;
+    color: #3D3D3D;
+    margin-bottom: 45px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: relative;
 }
 
-.left-side h2 span {
+.left-side h2::before {
+    content: "";
+    display: block;
+}
+
+.left-side h2::after {
+    content: " PLANET";
     color: #46A358;
+    white-space: pre;
 }
 
 .left-side p:last-of-type {
     color: #727272;
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom: 55px;
-    max-width: 500px;
+    margin-bottom: 45px;
+    max-width: 557px;
 }
 
-.left-side button {
+.shop-now {
     background: #46A358;
     border-radius: 6px;
-    padding: 16px 40px;
+    padding: 12px 35px;
     color: white;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
     transition: background-color 0.3s ease;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.left-side button:hover {
+.shop-now:hover {
     background: #387c45;
 }
 
 .right-side {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+    flex-shrink: 0;
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .right-side img {
