@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport"
@@ -7,10 +8,16 @@
         <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <link rel="stylesheet" href="assets/css/css_libs/normalize.css" />
         <link rel="stylesheet" href="assets/css/css_libs/reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css" />
         <title>Greenshop Dobro</title>
     </head>
+
     <body>
+        <!-- Rest of the HTML content remains exactly the same -->
         <header>
             <div class="container">
                 <nav>
@@ -25,7 +32,9 @@
                     </ul>
                     <a href="./registration.html" class="login-btn">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="white"/>
+                            <path
+                                d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"
+                                fill="white" />
                         </svg>
                         Login
                     </a>
@@ -38,7 +47,8 @@
                     <div class="left-side">
                         <p>WELCOME TO GREENSHOP</p>
                         <h2>LET'S MAKE A<br>BETTER</h2>
-                        <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants
+                            to create an unique Urban Jungle. Order your favorite plants!</p>
                         <button class="shop-now">SHOP NOW</button>
                     </div>
                     <div class="right-side">
@@ -46,6 +56,117 @@
                     </div>
                 </div>
             </section>
+            <section class="content">
+                <div class="container">
+                    <div class="shop-container">
+                        <aside class="categories">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li class="active">House Plants <span>(33)</span></li>
+                                <li>Potter Plants <span>(12)</span></li>
+                                <li>Seeds <span>(65)</span></li>
+                                <li>Small Plants <span>(39)</span></li>
+                                <li>Big Plants <span>(23)</span></li>
+                                <li>Succulents <span>(17)</span></li>
+                                <li>Terrariums <span>(19)</span></li>
+                                <li>Gardening <span>(13)</span></li>
+                                <li>Accessories <span>(18)</span></li>
+                            </ul>
+                            <div class="price-range">
+                                <h3>Price Range</h3>
+                                <div class="range-slider">
+                                    <input type="range" min="0" max="1000" value="500" class="slider">
+                                </div>
+                                <p>Price: $39 - $1230</p>
+                                <button class="filter-btn">Filter</button>
+                            </div>
+                            <div class="size-filter">
+                                <h3>Size</h3>
+                                <ul>
+                                    <li>Small <span>(119)</span></li>
+                                    <li>Medium <span>(86)</span></li>
+                                    <li>Large <span>(78)</span></li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <div class="products-section">
+                            <div class="products-header">
+                                <div class="tabs">
+                                    <button class="tab active">All Plants</button>
+                                    <button class="tab">New Arrivals</button>
+                                    <button class="tab">Sale</button>
+                                </div>
+                                <div class="sorting">
+                                    <span>Short by:</span>
+                                    <select>
+                                        <option>Default sorting</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="products-list">
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/11.jpg" alt="no image">
+                                    <h3>Barberton Daisy</h3>
+                                    <p class="price">$1139.00</p>
+                                </div>
+
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/03.jpg" alt="no image">
+                                    <h3>African Violet</h3>
+                                    <p class="price">$1444.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <div class="discount-tag">13% OFF</div>
+                                    <img src="assets/img/content_imges/02.jpg" alt="no image">
+                                    <h3>Angel Wing Begonia</h3>
+                                    <p class="price">$1111.00 <span class="old-price">$10229.00</span></p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/04.jpg" alt="no image">
+                                    <h3>Beach Spider Lily</h3>
+                                    <p class="price">$1222.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/05.jpg" alt="no image">
+                                    <h3>Blushing Bromeliad</h3>
+                                    <p class="price">$1500.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/06.jpg" alt="no image">
+                                    <h3>Aluminum Plant</h3>
+                                    <p class="price">$1300.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/07.jpg" alt="no image">
+                                    <h3>Beach Spider Lily</h3>
+                                    <p class="price">$1290.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/08.jpg" alt="no imaged">
+                                    <h3>Blushing Bromeliad</h3>
+                                    <p class="price">$1500.00</p>
+                                </div>
+                                <div class="product-card">
+                                    <img src="assets/img/content_imges/11.jpg" alt="no image">
+                                    <h3>Aluminum Plant</h3>
+                                    <p class="price">$1700.00</p>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <button class="active">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>4</button>
+                                <button class="next">→</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
+
 </html>
