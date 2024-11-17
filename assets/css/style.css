@@ -571,3 +571,150 @@ nav li:first-child::after {
 .blog-container .card button:hover {
     background: #387c45;
 }
+
+.filter-bar-section {
+    padding: 40px 0;
+    background: #FFFFFF;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-nav-button {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #3D3D3D;
+    background: none;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.filter-nav-button.active {
+    background: #46A358;
+    color: white;
+    font-weight: 500;
+}
+
+.sort-dropdown {
+    display: flex;
+    background-color: white;    
+    align-items: center;
+    gap: 10px;
+    color: #3D3D3D;
+}
+
+.sort-dropdown select {
+    padding: 8px 16px;
+    background-color: white; 
+   
+    color: #3D3D3D;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.filter-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.filter-cards .card {
+    position: relative;
+    background: #FBFBFB;
+    border: none;
+    border-radius: 6px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.filter-cards .card:hover {
+    box-shadow: 0px 8px 16px rgba(70, 163, 88, 0.1);
+}
+
+.filter-block {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.icons {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.filter-block:hover .icons {
+    opacity: 1;
+}
+
+.icon-btn {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+    font-size: 16px;
+}
+
+.icon-btn:hover {
+    background: #46A358;
+    color: white;
+}
+
+.filter-cards .card .name {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0 8px;
+}
+
+.filter-cards .card .price {
+    color: #46A358;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.filter-cards .card .old-price {
+    color: #A5A5A5;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.discount-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #46A358;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+}
