@@ -898,6 +898,40 @@ nav > ul > li > a:hover {
     z-index: 1;
 }
 
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #3D3D3D;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.filter-item:hover {
+    color: #46A358;
+}
+
+.filter-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #46A358;
+    border-radius: 2px;
+    cursor: pointer;
+    accent-color: #46A358;
+}
+
+.filter-item span {
+    margin-left: 5px;
+    color: rgba(70, 163, 88, 0.7);
+    font-size: 14px;
+}
+
 footer {
     background-color: white;
     padding: 100px 0;
