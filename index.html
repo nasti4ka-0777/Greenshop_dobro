@@ -20,7 +20,12 @@
                 <a href="#">
                     <img width="150" height="34" src="assets/img/Logo.svg" alt="logo" />
                 </a>
-                <ul>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
                     <li><a href="#id_hero">Home</a></li>
                     <li><a href="#id_shop">Shop</a></li>
                     <li class="has-submenu">
@@ -90,8 +95,11 @@
             <div class="container">
                 <div class="shop-container">
                     <aside class="categories">
-                        <h3>Categories</h3>
-                        <div class="filter-group">
+                        <div class="categories-header">
+                            <h3>Categories</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="filter-group categories-content">
                             <label class="filter-item">
                                 <input type="checkbox" name="category" value="house-plants">
                                 House Plants <span>(33)</span>
@@ -241,7 +249,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="promo-section">
             <div class="container">
                 <div class="promo-container">
@@ -374,6 +382,7 @@
         </section>
     </main>
     <footer>
+        <div class="container">
         <div class="footer-content">
             <div class="footer-subscribe">
                 <div class="footer-subscribe-item">
@@ -493,6 +502,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/041afbe02b.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
